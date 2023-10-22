@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link.active {
+    color: #0F172A;
+}
+
+.hidden {
+    display: none;
+}
+
+/* For Webkit (Safari/Chrome) */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #A78BFA; /* Set the color of the thumb (the draggable part) */
+  }
+  
+  /* For Firefox */
+  /* Firefox doesn't support changing the scrollbar color directly, but you can use a pseudo-element to achieve a similar effect. */
+  /* This example uses a purple gradient; you can adjust it as needed. */
+  /* Note: Firefox's scrollbar width is controlled by the operating system, so it's not as easy to customize. */
+  /* You can use -moz-appearance: none; to hide the scrollbar completely in Firefox, but this is not recommended for accessibility reasons. */
+  /* You can add other Firefox-specific styling as needed. */
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #A78BFA transparent;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #A78BFA;
+  }
+  
+  /* For Microsoft Edge */
+  /* Similar to Firefox, Edge doesn't support changing the scrollbar color directly, but you can use a pseudo-element to style it. */
+  /* This example uses a purple gradient. */
+  /* Note: Like Firefox, Edge's scrollbar width is controlled by the operating system. */
+  /* You can add other Edge-specific styling as needed. */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #A78BFA;
+  }
+  
+  /* Hide scrollbars on mobile devices */
+  /* On mobile devices, you may want to hide the scrollbars. */
+  @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar {
+      scrollbar-width: none;
+    }
+  }
+  

@@ -49,13 +49,13 @@ export default function Work() {
         <h1 className='text-4xl font-bold my-4'>Some Sites I Currently Manage</h1>
         <div className='grid 2xl:max-w-screen-xl xl:max-w-screen-lg md:max-w-screen-md mx-auto px-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:cursor-pointer'>
           {projects.map((project, index) => (
-            <div className='bg-violet-400 p-4 flex flex-col gap-2 rounded-2xl transition-all hover:-translate-y-2 duration-300' key={index}>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className='bg-violet-400 p-4 flex flex-col gap-2 rounded-2xl transition-all hover:-translate-y-2 duration-300' key={index}>
               <h2 className='text-2xl font-semibold'>{project.title}</h2>
               <img src={project.image} alt={project.title} />
               <a className='underline hover:no-underline' href={project.link} target="_blank" rel="noopener noreferrer">
                 View Project
               </a>
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function AboutMe() {
   const keyPoints = [
     {
       header: "About Me",
-      body: "Hello, I'm Gabe Cloud, a 29-year-old web developer based in St. George, Utah, specializing in React. Outside of web development, I enjoy playing the guitar and spending quality time with friends and family.",
+      body: "Hello, I'm Gabe Cloud, a 29-year-old web developer based in St. George, Utah, specializing in the React ecosystem. Outside of web development, I enjoy playing the guitar and spending quality time with friends and family.",
       image: AboutMeImage1, // Use the image as a prop
     },
     {
@@ -18,7 +18,7 @@ export default function AboutMe() {
     },
     {
       header: "Technical Expertise",
-      body: "My technical toolkit includes HTML, CSS, JavaScript, JQuery, Liquid, React, Vite, Tailwind, React-Router, Redux, and React Query, among others. These skills empower me to create robust digital solutions.",
+      body: "My technical toolkit includes HTML, CSS, JavaScript, JQuery, Liquid, React, Vite, NextJS, Tailwind, Redux, React Query, MySQL, and PostgreSQL among others. These skills empower me to create robust digital solutions for any technical requirement.",
       image: AboutMeImage3, // Use the image as a prop
     },
   ];

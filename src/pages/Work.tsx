@@ -3,7 +3,7 @@ import Image2 from '../assets/hellfire-hotsauce.jpg'
 import Image3 from '../assets/purely-pickleball.jpg'
 import Image4 from '../assets/pretty-bash.jpg'
 import Image5 from '../assets/roolee.jpg'
-import Image6 from '../assets/dynomite-diesel.jpg'
+import Image6 from '../assets/not-a-wheelchair.jpg'
 
 
 
@@ -36,9 +36,9 @@ const projects = [
       link: 'https://www.roolee.com',
     },
     {
-      title: 'Dynomite Diesel',
+      title: 'Not A Wheelchair',
       image: `${ Image6 }`,
-      link: 'https://www.dynomitediesel.com',
+      link: 'https://notawheelchair.com/products/the-rig',
     },
     // Repeat for the other projects
   ];

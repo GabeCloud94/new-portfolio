@@ -66,13 +66,13 @@ const shopifySites = [
 export default function Work() {
     return (
       <div className='w-screen flex justify-center flex-col text-center'>
-        <h1 className='text-4xl font-bold my-8'>Shopify Sites</h1>
+        <h1 className='text-4xl font-bold my-8'>Shopify Sites I Manage</h1>
         <div className='grid 2xl:max-w-screen-xl xl:max-w-screen-lg md:max-w-screen-md mx-auto px-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         {shopifySites.map((project, index) => (
         <SitesCard title={project.title} image={project.image} link={project.link} index={index} key={index} />
         ))}
         </div>
-        <h2 className='text-4xl font-bold my-8'>Project Sites</h2>
+        <h2 className='text-4xl font-bold my-8'>Project Sites I've Built</h2>
         <div className='grid 2xl:max-w-screen-xl xl:max-w-screen-lg md:max-w-screen-md mx-auto px-8 gap-6 grid-cols-1 md:grid-cols-2 mb-6'>
         {projectSites.map((project, index) => (
         <SitesCard title={project.title} image={project.image} link={project.link} index={index} key={index} />

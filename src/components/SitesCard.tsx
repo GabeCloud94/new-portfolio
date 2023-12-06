@@ -12,7 +12,7 @@ type ProjectTypes = {
 
 
   
-export default function ShopifySites({title, image, link, index}: ProjectTypes) {
+export default function SitesCard({title, image, link, index}: ProjectTypes) {
     return (
 
 

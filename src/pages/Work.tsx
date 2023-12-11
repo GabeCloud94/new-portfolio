@@ -6,6 +6,7 @@ import Image5 from '../assets/roolee.jpg'
 import Image6 from '../assets/not-a-wheelchair.jpg'
 import GCBlog from '../assets/gc-blog.jpg'
 import GCClothing from '../assets/gc-clothing.jpg'
+import GCNextTest from '../assets/gc-next-test.jpg'
 import SitesCard from '../components/SitesCard'
 
 
@@ -48,6 +49,11 @@ const shopifySites = [
   
   const projectSites = [
       {
+        title: 'GC Next/Shopify',
+        image: `${ GCNextTest }`, // Provide the actual image path
+        link: 'https://nextjs-commerce-liart-beta.vercel.app/',
+      },
+      {
         title: 'GC Blog',
         image: `${ GCBlog }`, // Provide the actual image path
         link: 'https://supabase-blog-tau.vercel.app/',
@@ -73,7 +79,7 @@ export default function Work() {
         ))}
         </div>
         <h2 className='text-4xl font-bold my-8'>Project Sites I've Built</h2>
-        <div className='grid 2xl:max-w-screen-xl xl:max-w-screen-lg md:max-w-screen-md mx-auto px-8 gap-6 grid-cols-1 md:grid-cols-2 mb-6'>
+        <div className='grid 2xl:max-w-screen-xl xl:max-w-screen-lg md:max-w-screen-md mx-auto px-8 gap-6 grid-cols-1 md:grid-cols-3 mb-6'>
         {projectSites.map((project, index) => (
         <SitesCard title={project.title} image={project.image} link={project.link} index={index} key={index} />
         ))}

@@ -27,7 +27,7 @@ export default function Sidebar(): JSX.Element {
 
   return (
     <div
-      className={`h-screen sticky top-0 bg-violet-400 ${sidebarWidthClass} py-4 flex flex-col justify-between text-white text-center transition-all duration-500`}
+      className={`h-screen sticky top-0 bg-violet-400 ${sidebarWidthClass} py-4 flex flex-col justify-between text-white text-center transition-all duration-500 z-10`}
     >
       <div className="flex flex-col">
         <button
@@ -50,14 +50,23 @@ export default function Sidebar(): JSX.Element {
           <img className={`rounded-full ${imageWidthClass} mx-auto mb-6 border-2 border-solid border-white hover:border-neutral-300 transition-all duration-500`} src={ProfilePicture} alt="Profile" />
         </NavLink>
         <ul className="flex flex-col w-full gap-6 items-center divide-y divide-white">
-          <li className="w-full pt-6 hover:text-neutral-300 flex justify-center text-lg">
-            <NavLink to="/about" className="nav-link transition delay-150 hover:animate-bounce flex items-center"><AiFillSmile />{isMenuCollapsed ? ('') : ('About Me')}</NavLink>
+          <li className="w-full pt-6  flex justify-center text-lg">
+            <NavLink to="/about" className="group relative nav-link flex items-center">
+              <AiFillSmile />{isMenuCollapsed ? ('') : ('About Me')}
+              {isMenuCollapsed && <span className="pointer-events-none absolute -top-2 left-12 w-max opacity-0  group-hover:opacity-100 bg-violet-400 transition-all duration-700 rounded-full p-2">About Me</span>}
+            </NavLink>
           </li>
-          <li className="w-full pt-6 hover:text-neutral-300 flex justify-center text-lg">
-            <NavLink to="/work" className="nav-link transition delay-150 hover:animate-bounce flex items-center"><AiFillCode />{isMenuCollapsed ? ('') : ('My Work')}</NavLink>
+          <li className="w-full pt-6  flex justify-center text-lg">
+            <NavLink to="/work" className="group relative nav-link flex items-center">
+              <AiFillCode />{isMenuCollapsed ? ('') : ('My Work')}
+              {isMenuCollapsed && <span className="pointer-events-none absolute -top-2 left-12 w-max opacity-0  group-hover:opacity-100 bg-violet-400 transition-all duration-700 rounded-full p-2">My Work</span>}
+            </NavLink>
           </li>
-          <li className="w-full py-6 hover:text-neutral-300 flex justify-center text-lg">
-            <NavLink to="/contact" className="nav-link transition delay-150 hover:animate-bounce flex items-center"><AiFillMail />{isMenuCollapsed ? ('') : ('Contact Me')}</NavLink>
+          <li className="w-full py-6 flex justify-center text-lg">
+            <NavLink to="/contact" className="group  relative nav-link flex items-center">
+              <AiFillMail />{isMenuCollapsed ? ('') : ('Contact Me')}
+              {isMenuCollapsed && <span className="pointer-events-none absolute -top-2 left-12 w-max opacity-0  group-hover:opacity-100 bg-violet-400 transition-all duration-700 rounded-full p-2">Contact Me</span>}
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -66,7 +75,6 @@ export default function Sidebar(): JSX.Element {
     </div>
   );
 }
-
 
 
 

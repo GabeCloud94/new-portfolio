@@ -4,7 +4,7 @@ import Image3 from '../assets/purely-pickleball.jpg'
 import Image4 from '../assets/pretty-bash.jpg'
 import Image5 from '../assets/roolee.jpg'
 import Image6 from '../assets/not-a-wheelchair.jpg'
-import GCBlog from '../assets/gc-blog.jpg'
+import Cloud from '../assets/clouds-dev-logo.webp'
 import GCClothing from '../assets/gc-clothing.jpg'
 import GCNextTest from '../assets/gc-next-test.jpg'
 import SitesCard from '../components/SitesCard'
@@ -54,9 +54,9 @@ const shopifySites = [
         link: 'https://nextjs-commerce-liart-beta.vercel.app/',
       },
       {
-        title: 'GC Blog',
-        image: `${ GCBlog }`, // Provide the actual image path
-        link: 'https://supabase-blog-tau.vercel.app/',
+        title: 'Clouds Design & Development',
+        image: `${ Cloud }`, // Provide the actual image path
+        link: 'https://cloudsdesignanddevelopment.com',
       },
       {
         title: 'GC Clothing',

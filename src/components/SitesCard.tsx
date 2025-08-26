@@ -23,7 +23,7 @@ export default function SitesCard({title, image, link, index}: ProjectTypes) {
             className="bg-violet-400 p-4 flex flex-col gap-2 rounded-2xl transition-all hover:-translate-y-2 duration-300 animate-fade-in"
           >
             <h2 className='text-2xl font-semibold'>{title}</h2>
-            <a href={link} target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer">
+            <a href={link} target="_blank" rel="noopener noreferrer" className="hover:cursor-pointer text flex justify-center">
               <img src={image} alt={title} />
             </a>
               <a className='underline hover:no-underline hover:cursor-pointer' href={link} target="_blank" rel="noopener noreferrer">
